@@ -22,8 +22,11 @@ function init(){
 
 function draw(){ 
     ctx.clearRect(0, 0, 300, 300);
-    ctx.fillStyle = "#FF0000";
+    ctx.fillStyle = "red";
     ctx.fillRect(paddle.x, paddle.y, paddle.width, paddle.height);
+
+    ctx.fillStyle = "green";
+    ctx.fillRect(paddle.x, HEIGHT - paddle.y - 9, paddle.width, paddle.height);
 }
 
 init(); //Temporary init() until button listeners are implemented
